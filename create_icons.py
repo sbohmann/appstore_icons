@@ -33,6 +33,7 @@ def run():
         print(image)
 
     definition_output_path = definition_path + '.out'
+    
     with open(os.path.join(icon_set_directory, definition_output_path), 'w', encoding='utf-8') as file:
         encoder = json.JSONEncoder(indent=2, separators=(', ', ' : '))
         text = encoder.encode(content)
